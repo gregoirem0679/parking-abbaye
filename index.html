@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Parking à vendre — Place/Box à vendre</title>
+  <meta name="description" content="Annonce de vente : parking / box. Emplacement, taille, prix et contact.">
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:title" content="Parking à vendre">
+  <meta property="og:description" content="Place/box à vendre - détails, photos et contact">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Parking à vendre</h1>
+    <p class="tagline">Vends place / box de parking — emplacement pratique et sécurisé</p>
+  </header>
+
+  <main class="container">
+    <section class="gallery" id="gallery">
+      <!-- Remplacez les images dans le dossier `images/` puis les noms ci-dessous -->
+      <img src="images/photo1.jpg" alt="Photo 1 du parking" class="hero">
+      <div class="thumbs">
+        <img src="images/photo2.jpg" alt="Photo 2" />
+        <img src="images/photo3.jpg" alt="Photo 3" />
+        <img src="images/photo4.jpg" alt="Photo 4" />
+      </div>
+    </section>
+
+    <section class="details">
+      <h2>Détails</h2>
+      <ul>
+        <li><strong>Localisation :</strong> <span id="location">Abbaye</span></li>
+        <li><strong>Type :</strong> <span id="type">Place extérieure</span></li>
+        <li><strong>Surface :</strong> <span id="size">12 m²</span></li>
+        <li><strong>Accès :</strong> <span id="access">Accès sécurisé, télécommande</span></li>
+        <li><strong>Disponibilité :</strong> <span id="availability">Immédiale</span></li>
+        <li><strong>Prix :</strong> <span id="price">25 000 € (négociable)</span></li>
+        <li><strong>Référence :</strong> <span id="ref">REF-001</span></li>
+      </ul>
+
+      <h3>Description</h3>
+      <p id="description">
+        Parking situé à proximité des transports et commerces. Sol bétonné, hauteur suffisante pour un monospace. Idéal investisseur ou particulier.
+      </p>
+
+      <div class="contact">
+        <h3>Contact</h3>
+        <p>Pour plus d'infos ou visite, contactez : <a id="contact-mail" href="mailto:email@example.com">email@example.com</a></p>
+        <p>Téléphone : <a id="contact-phone" href="tel:+33123456789">+33 1 23 45 67 89</a></p>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="mailto:email@example.com?subject=Intérêt%20pour%20le%20parking%20REF-001">Contacter le vendeur</a>
+        <a class="btn secondary" href="#gallery">Voir les photos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Annonce publiée par <strong>Votre nom</strong>. Mise à jour le <span id="date">2025-12-04</span>.</p>
+  </footer>
+
+  <script>
+    // Script simple pour remplacer des champs si vous voulez l'automatiser plus tard.
+    // Exemple : document.getElementById('price').textContent = '30 000 €';
+  </script>
+</body>
+</html>
