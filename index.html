@@ -22,6 +22,7 @@
       <!-- Remplacez les images dans le dossier `images/` puis les noms ci-dessous -->
       <img src="images/photo 1.jpg" alt="Photo 1 du parking" class="hero">
       <div class="thumbs">
+        <img src="images/photo 1.jpg" alt="Photo 1" />
         <img src="images/photo 2.jpg" alt="Photo 2" />
         <img src="images/photo 3.jpg" alt="Photo 3" />
         <img src="images/photo 4.jpg" alt="Photo 4" />
@@ -61,22 +62,19 @@
     <p>Annonce publiée par <strong>Grégoire Maurau</strong>. Mise à jour le <span id="date">2025-12-04</span>.</p>
   </footer>
 
-  
+
   <script>
-  // Sélectionne l'image principale
   const heroImage = document.querySelector('.hero');
-  // Sélectionne toutes les miniatures
   const thumbnails = document.querySelectorAll('.thumbs img');
 
-  // Ajoute un écouteur de clic sur chaque miniature
   thumbnails.forEach(thumb => {
-    thumb.addEventListener('click', () => {
+    thumb.addEventListener('mouseover', () => {
       // Change la source et l'alt de l'image principale
       heroImage.src = thumb.src;
       heroImage.alt = thumb.alt;
     });
   });
-  </script>
+</script>
 
   
 </body>
