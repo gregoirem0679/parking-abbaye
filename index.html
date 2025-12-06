@@ -9,25 +9,7 @@
   <meta property="og:title" content="Parking à vendre">
   <meta property="og:description" content="Place de parking à vendre - détails, photos et contact">
   <meta property="og:type" content="website">
-
-
-  <script>
-  // Sélectionne l'image principale
-  const heroImage = document.querySelector('.hero');
-  // Sélectionne toutes les miniatures
-  const thumbnails = document.querySelectorAll('.thumbs img');
-
-  // Ajoute un écouteur de clic sur chaque miniature
-  thumbnails.forEach(thumb => {
-    thumb.addEventListener('click', () => {
-      // Change la source et l'alt de l'image principale
-      heroImage.src = thumb.src;
-      heroImage.alt = thumb.alt;
-    });
-  });
-  </script>
-
-  
+ 
 </head>
 <body>
   <header class="site-header">
@@ -79,9 +61,23 @@
     <p>Annonce publiée par <strong>Grégoire Maurau</strong>. Mise à jour le <span id="date">2025-12-04</span>.</p>
   </footer>
 
+  
   <script>
-    // Script simple pour remplacer des champs si vous voulez l'automatiser plus tard.
-    // Exemple : document.getElementById('price').textContent = '30 000 €';
+  // Sélectionne l'image principale
+  const heroImage = document.querySelector('.hero');
+  // Sélectionne toutes les miniatures
+  const thumbnails = document.querySelectorAll('.thumbs img');
+
+  // Ajoute un écouteur de clic sur chaque miniature
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      // Change la source et l'alt de l'image principale
+      heroImage.src = thumb.src;
+      heroImage.alt = thumb.alt;
+    });
+  });
   </script>
+
+  
 </body>
 </html>
